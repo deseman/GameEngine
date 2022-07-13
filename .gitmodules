@@ -2,3 +2,7 @@
 	path = GameEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
 	ignore = untracked
+[submodule "GameEngine/vendor/GLFW"]
+	path = GameEngine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+	ignore = untracked
