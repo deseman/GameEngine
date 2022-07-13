@@ -26,8 +26,8 @@ namespace GameEngine {
 #define LOG_DEBUG(...)        ::GameEngine::Log::GetCoreLogger()->debug(__VA_ARGS__)
 #define LOG_TRACE(...)        ::GameEngine::Log::GetCoreLogger()->trace(__VA_ARGS__)
 
-#define CLIENT_LOG_ERROR(...) ::GameEngine::Log::GetClientLogger()->error(__VA_ARGS__)
-#define CLIENT_LOG_WARN(...)  ::GameEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define CLIENT_LOG_INFO(...)  ::GameEngine::Log::GetClientLogger()->info(__VA_ARGS__)
-#define CLIENT_LOG_DEBUG(...) ::GameEngine::Log::GetClientLogger()->debug(__VA_ARGS__)
-#define CLIENT_LOG_TRACE(...) ::GameEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define LOG_CLIENT_ERROR(...) ::GameEngine::Log::GetClientLogger()->error(__VA_ARGS__)
+#define LOG_CLIENT_WARN(...)  ::GameEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define LOG_CLIENT_INFO(...)  ::GameEngine::Log::GetClientLogger()->info(__VA_ARGS__)
+#define LOG_CLIENT_DEBUG(...) ::GameEngine::Log::GetClientLogger()->debug(__VA_ARGS__)
+#define LOG_CLIENT_TRACE(...) ::GameEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
