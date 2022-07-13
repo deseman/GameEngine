@@ -2,6 +2,7 @@
 
 #include "GameEngine/Core.h"
 #include "GameEngine/Window.h"
+#include "GameEngine/LayerStack.h"
 #include "GameEngine/Events/ApplicationEvent.h"
 
 namespace GameEngine {
@@ -11,6 +12,7 @@ namespace GameEngine {
 	private:
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+		LayerStack m_LayerStack;
 
 		bool OnWindowClose(WindowCloseEvent& e);
 	public:
@@ -20,6 +22,9 @@ namespace GameEngine {
 		void Run();
 
 		void OnEvent(Event& e);
+
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* layer);
 	};
 
 	// To be defined in client
