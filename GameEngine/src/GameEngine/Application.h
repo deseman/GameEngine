@@ -1,7 +1,8 @@
 #pragma once
 
-#include "Core.h"
-#include "Window.h"
+#include "GameEngine/Core.h"
+#include "GameEngine/Window.h"
+#include "GameEngine/Events/ApplicationEvent.h"
 
 namespace GameEngine {
 
@@ -10,11 +11,15 @@ namespace GameEngine {
 	private:
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+
+		bool OnWindowClose(WindowCloseEvent& e);
 	public:
 		Application();
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& e);
 	};
 
 	// To be defined in client
