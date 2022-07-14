@@ -20,6 +20,8 @@ include "GameEngine/vendor/GLFW"
 include "GameEngine/vendor/Glad"
 include "GameEngine/vendor/imgui"
 
+startproject "Sandbox"
+
 project "GameEngine"
 	location "GameEngine"
 	kind "SharedLib"
