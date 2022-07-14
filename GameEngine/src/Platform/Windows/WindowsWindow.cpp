@@ -43,7 +43,7 @@ namespace GameEngine {
 		{
 			// TODO: glfwTerminate on system shutdown
 			int success = glfwInit();
-			glfwSetErrorCallback(GLFWErrorCallback)
+			glfwSetErrorCallback(GLFWErrorCallback);
 			GE_ASSERT(success, "Could not initialize GLFW!");
 
 			s_GLFWInitialized = true;
