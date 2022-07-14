@@ -27,7 +27,7 @@ namespace GameEngine {
 
 	void Application::OnEvent(Event& e)
 	{
-		LOG_TRACE("{0}", e);
+		// LOG_TRACE("{0}", e);
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 

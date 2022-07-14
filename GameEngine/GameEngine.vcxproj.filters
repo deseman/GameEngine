@@ -67,6 +67,8 @@
     <ClInclude Include="src\gepch.h" />
     <ClInclude Include="src\GameEngine\Input.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\GameEngine\KeyCodes.h" />
+    <ClInclude Include="src\GameEngine\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GameEngine\Application.cpp">
