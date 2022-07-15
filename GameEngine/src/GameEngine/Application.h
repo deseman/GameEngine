@@ -5,6 +5,7 @@
 #include "GameEngine/LayerStack.h"
 #include "GameEngine/Events/ApplicationEvent.h"
 #include "GameEngine/ImGui/ImGuiLayer.h"
+#include "GameEngine/Renderer/Shader.h"
 
 namespace GameEngine {
 
@@ -18,6 +19,7 @@ namespace GameEngine {
 		LayerStack m_LayerStack;
 
 		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+		std::unique_ptr<Shader> m_Shader;
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 	public:
