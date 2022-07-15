@@ -16,9 +16,6 @@
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Platform\OpenGL">
-      <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\Platform\Windows">
       <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
     </Filter>
@@ -92,9 +89,6 @@
     </ClInclude>
     <ClInclude Include="src\GameEngine\Window.h">
       <Filter>src\GameEngine</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsInput.h">
       <Filter>src\Platform\Windows</Filter>
@@ -300,12 +294,6 @@
     <ClInclude Include="vendor\glm\glm\ext\matrix_clip_space.inl">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_common.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_common.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\matrix_double2x2.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
@@ -414,66 +402,6 @@
     <ClInclude Include="vendor\glm\glm\ext\matrix_float4x4_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int2x2.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int2x2_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int2x3.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int2x3_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int2x4.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int2x4_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int3x2.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int3x2_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int3x3.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int3x3_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int3x4.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int3x4_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int4x2.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int4x2_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int4x3.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int4x3_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int4x4.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_int4x4_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_integer.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_integer.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\matrix_projection.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
@@ -490,60 +418,6 @@
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\matrix_transform.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint2x2.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint2x2_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint2x3.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint2x3_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint2x4.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint2x4_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint3x2.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint3x2_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint3x3.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint3x3_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint3x4.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint3x4_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint4x2.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint4x2_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint4x3.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint4x3_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint4x4.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\matrix_uint4x4_sized.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\quaternion_common.hpp">
@@ -610,24 +484,6 @@
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\scalar_int_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\scalar_integer.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\scalar_integer.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\scalar_packing.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\scalar_packing.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\scalar_reciprocal.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\scalar_reciprocal.inl">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\scalar_relational.hpp">
@@ -726,43 +582,25 @@
     <ClInclude Include="vendor\glm\glm\ext\vector_int1.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_int1_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_int1_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_int2.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_int2_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_int2_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_int3.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_int3_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_int3_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_int4.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_int4_sized.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_integer.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_integer.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_packing.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_packing.inl">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_reciprocal.hpp">
-      <Filter>vendor\glm\glm\ext</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_reciprocal.inl">
+    <ClInclude Include="vendor\glm\glm\ext\vector_int4_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_relational.hpp">
@@ -774,25 +612,25 @@
     <ClInclude Include="vendor\glm\glm\ext\vector_uint1.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_uint1_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_uint1_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_uint2.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_uint2_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_uint2_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_uint3.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_uint3_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_uint3_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_uint4.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\ext\vector_uint4_sized.hpp">
+    <ClInclude Include="vendor\glm\glm\ext\vector_uint4_precision.hpp">
       <Filter>vendor\glm\glm\ext</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\ext\vector_ulp.hpp">
@@ -889,6 +727,9 @@
       <Filter>vendor\glm\glm\gtc</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\gtc\reciprocal.hpp">
+      <Filter>vendor\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\glm\glm\gtc\reciprocal.inl">
       <Filter>vendor\glm\glm\gtc</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\gtc\round.hpp">
@@ -1170,12 +1011,6 @@
     <ClInclude Include="vendor\glm\glm\gtx\orthonormalize.inl">
       <Filter>vendor\glm\glm\gtx</Filter>
     </ClInclude>
-    <ClInclude Include="vendor\glm\glm\gtx\pca.hpp">
-      <Filter>vendor\glm\glm\gtx</Filter>
-    </ClInclude>
-    <ClInclude Include="vendor\glm\glm\gtx\pca.inl">
-      <Filter>vendor\glm\glm\gtx</Filter>
-    </ClInclude>
     <ClInclude Include="vendor\glm\glm\gtx\perpendicular.hpp">
       <Filter>vendor\glm\glm\gtx</Filter>
     </ClInclude>
@@ -1355,6 +1190,9 @@
     <ClCompile Include="src\GameEngine\Application.cpp">
       <Filter>src\GameEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\GameEngine\ImGui\ImGuiBuild.cpp">
+      <Filter>src\GameEngine\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\GameEngine\ImGui\ImGuiLayer.cpp">
       <Filter>src\GameEngine\ImGui</Filter>
     </ClCompile>
@@ -1366,9 +1204,6 @@
     </ClCompile>
     <ClCompile Include="src\GameEngine\Log.cpp">
       <Filter>src\GameEngine</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Platform\Windows</Filter>

@@ -1,5 +1,7 @@
 #include <GameEngine.h>
 
+#include "imgui/imgui.h"
+
 class ExampleLayer : public GameEngine::Layer
 {
 public:
@@ -26,7 +28,6 @@ public:
 	Sandbox()
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new GameEngine::ImGuiLayer());
 	}
 
 	~Sandbox()

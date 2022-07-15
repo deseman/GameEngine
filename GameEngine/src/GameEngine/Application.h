@@ -4,6 +4,7 @@
 #include "GameEngine/Window.h"
 #include "GameEngine/LayerStack.h"
 #include "GameEngine/Events/ApplicationEvent.h"
+#include "GameEngine/ImGui/ImGuiLayer.h"
 
 namespace GameEngine {
 
@@ -12,6 +13,7 @@ namespace GameEngine {
 	private:
 		static Application* s_Instance;
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 

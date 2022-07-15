@@ -1,16 +1,12 @@
 [submodule "GameEngine/vendor/spdlog"]
 	path = GameEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
-	ignore = untracked
 [submodule "GameEngine/vendor/GLFW"]
 	path = GameEngine/vendor/GLFW
 	url = https://github.com/TheCherno/glfw
-	ignore = untracked
 [submodule "GameEngine/vendor/imgui"]
 	path = GameEngine/vendor/imgui
 	url = https://github.com/TheCherno/imgui
-	ignore = untracked
 [submodule "GameEngine/vendor/glm"]
 	path = GameEngine/vendor/glm
 	url = https://github.com/g-truc/glm
-	ignore = untracked
