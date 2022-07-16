@@ -1,18 +1,18 @@
 #pragma once
 
 #include "GameEngine/Core.h"
+
 #include "GameEngine/Window.h"
 #include "GameEngine/LayerStack.h"
 #include "GameEngine/Events/ApplicationEvent.h"
+
+#include "GameEngine/Core/Timestep.h"
+
 #include "GameEngine/ImGui/ImGuiLayer.h"
-#include "GameEngine/Renderer/Shader.h"
-#include "GameEngine/Renderer/Buffer.h"
-#include "GameEngine/Renderer/VertexArray.h"
-#include "GameEngine/Renderer/OrthographicCamera.h"
 
 namespace GameEngine {
 
-	class GE_API Application
+	class Application
 	{
 	private:
 		static Application* s_Instance;
@@ -20,14 +20,7 @@ namespace GameEngine {
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
-
-		std::shared_ptr<Shader> m_Shader;
-		std::shared_ptr<VertexArray> m_VertexArray;
-
-		std::shared_ptr<Shader> m_BlueShader;
-		std::shared_ptr<VertexArray> m_SquareVA;
-
-		OrthographicCamera m_Camera;
+		float m_LastFrameTime = 0.0f;
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 	public:

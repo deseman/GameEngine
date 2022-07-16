@@ -122,7 +122,6 @@ namespace GameEngine {
 	void Shader::UploadUniformMat4(const std::string& name, const glm::mat4& matrix)
 	{
 		GLint location = glGetUniformLocation(m_RendererID, name.c_str());
-		LOG_ERROR("{0}: {1}", name.c_str(), location);
 		glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
 	}
 }
