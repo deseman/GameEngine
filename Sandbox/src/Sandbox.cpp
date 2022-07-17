@@ -182,10 +182,9 @@ public:
 		ImGui::End();
 	}
 
-	void OnEvent(GameEngine::Event& event) override
+	void OnEvent(GameEngine::Event& e) override
 	{
-		//GameEngine::EventDispatcher dispatcher(event);
-		//dispatcher.Dispatch<GameEngine::KeyPressedEvent>(GE_BIND_EVENT_FN(ExampleLayer::OnKeyPressed));
+		m_CameraController.OnEvent(e);
 	}
 
 
