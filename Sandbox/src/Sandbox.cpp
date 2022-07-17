@@ -165,6 +165,7 @@ public:
 		m_TextureShader.reset(GameEngine::Shader::Create(textureShaderVertexSrc, textureShaderFragmentSrc));
 
 		m_Texture = GameEngine::Texture2D::Create("assets/textures/Checkerboard.png");
+		m_LogoTexture = GameEngine::Texture2D::Create("assets/textures/ChernoLogo.png");
 
 		std::dynamic_pointer_cast<GameEngine::OpenGLShader>(m_TextureShader)->Bind();
 		std::dynamic_pointer_cast<GameEngine::OpenGLShader>(m_TextureShader)->UploadUniformInt("u_Texture", 0);
@@ -219,6 +220,9 @@ public:
 
 		m_Texture->Bind();
 		GameEngine::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
+
+		m_LogoTexture->Bind();
+		GameEngine::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
 		
 		// Triangle
 		// GameEngine::Renderer::Submit(m_Shader, m_VertexArray);
@@ -248,7 +252,7 @@ private:
 	GameEngine::Ref<GameEngine::Shader> m_FlatColorShader, m_TextureShader;
 	GameEngine::Ref<GameEngine::VertexArray> m_SquareVA;
 
-	GameEngine::Ref<GameEngine::Texture2D> m_Texture;
+	GameEngine::Ref<GameEngine::Texture2D> m_Texture, m_LogoTexture;
 
 	GameEngine::OrthographicCamera m_Camera;
 
