@@ -3,13 +3,21 @@
 #include "GameEngine/Renderer/Shader.h"
 #include <glm/glm.hpp>
 
+// TODO: REMOVE!
+typedef unsigned int GLenum;
+
 namespace GameEngine {
 
 	class OpenGLShader : public Shader
 	{
 	private:
 		uint32_t m_RendererID;
+	private:
+		std::string ReadFile(const std::string& filepath);
+		std::unordered_map<GLenum, std::string> PreProcess(const std::string& source);
+		void Compile(const std::unordered_map<GLenum, std::string>& shaderSources);
 	public:
+		OpenGLShader(const std::string& filepath);
 		OpenGLShader(const std::string& vertexSrc, const std::string& fragmentSrc);
 		virtual ~OpenGLShader();
 
