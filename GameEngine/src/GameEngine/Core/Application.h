@@ -1,9 +1,9 @@
 #pragma once
 
-#include "GameEngine/Core.h"
+#include "GameEngine/Core/Core.h"
 
-#include "GameEngine/Window.h"
-#include "GameEngine/LayerStack.h"
+#include "GameEngine/Core/Window.h"
+#include "GameEngine/Core/LayerStack.h"
 #include "GameEngine/Events/ApplicationEvent.h"
 
 #include "GameEngine/Core/Timestep.h"
