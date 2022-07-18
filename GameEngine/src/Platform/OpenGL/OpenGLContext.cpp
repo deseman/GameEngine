@@ -23,6 +23,14 @@ namespace GameEngine {
 		LOG_INFO("   Vendor   : {0}", glGetString(GL_VENDOR));
 		LOG_INFO("   Renderer : {0}", glGetString(GL_RENDERER));
 		LOG_INFO("   Vendor   : {0}", glGetString(GL_VERSION));
+
+#ifdef GE_ENABLE_ASSERTS
+		int versionMajor, versionMinor;
+		glGetIntegerv(GL_MAJOR_VERSION, &versionMajor);
+		glGetIntegerv(GL_MINOR_VERSION, &versionMinor);
+
+		GE_ASSERT(versionMajor > 4 || (versionMajor == 4 && versionMinor >= 5), "OpenGL version 4.5 or higher is required!")
+#endif
 	}
 	void OpenGLContext::SwapBuffers()
 	{

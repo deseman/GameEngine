@@ -9,6 +9,11 @@ workspace "GameEngine"
 		"Dist"
 	}
 
+	flags
+	{
+		"MultiProcessorCompile"
+	}
+
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root folder
@@ -19,10 +24,11 @@ IncludeDir["ImGui"] = "GameEngine/vendor/imgui"
 IncludeDir["glm"] = "GameEngine/vendor/glm"
 IncludeDir["stb_image"] = "GameEngine/vendor/stb_image"
 
-
-include "GameEngine/vendor/GLFW"
-include "GameEngine/vendor/Glad"
-include "GameEngine/vendor/imgui"
+group "Dependencies"
+	include "GameEngine/vendor/GLFW"
+	include "GameEngine/vendor/Glad"
+	include "GameEngine/vendor/imgui"
+group ""
 
 
 project "GameEngine"
@@ -77,7 +83,6 @@ project "GameEngine"
 
 		defines
 		{
-			"GE_PLATFORM_WINDOWS",
 			"GE_BUILD_DLL",
 			"GLFW_INCLUDE_NONE"
 		}

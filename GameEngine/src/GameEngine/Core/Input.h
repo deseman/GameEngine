@@ -7,7 +7,7 @@ namespace GameEngine {
 	class GE_API Input
 	{
 	private:
-		static Input* s_Instance;
+		static Scope<Input> s_Instance;
 	protected:
 		virtual bool IsKeyPressedImpl(int keycode) = 0;
 		virtual bool IsMouseButtonPressedImpl(int button) = 0;
